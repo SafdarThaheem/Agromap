@@ -41,11 +41,13 @@
     	body, html {
 		    height: 100%;
 		    background-repeat: no-repeat;
-		    background-image: linear-gradient(rgb(104, 145, 162), rgb(12, 97, 33));
+			background-color: #585858;
+		    /* background-image: linear-gradient(rgb(104, 145, 162), rgb(12, 97, 33)); */
 		}
 
 		.card-container.card {
-		    max-width: 350px;
+		    max-width: 466px;
+			max-height: 555px;
 		    padding: 40px 40px;
 		}
 
@@ -62,7 +64,7 @@
 		 * Card component
 		 */
 		.card {
-		    background-color: #F7F7F7;
+		    background-color: #FFFFFF;
 		    /* just in case there no content*/
 		    padding: 20px 25px 30px;
 		    margin: 0 auto 25px;
@@ -77,13 +79,13 @@
 		}
 
 		.profile-img-card {
-		    width: 96px;
-		    height: 96px;
+		    width: 288px;
+		    height: 148.43px;
 		    margin: 0 auto 10px;
 		    display: block;
 		    -moz-border-radius: 50%;
 		    -webkit-border-radius: 50%;
-		    border-radius: 50%;
+		    border-radius: 0%;
 		}
 
 		/*
@@ -115,8 +117,8 @@
 		.form-signin #inputEmail,
 		.form-signin #inputPassword {
 		    direction: ltr;
-		    height: 44px;
-		    font-size: 16px;
+		    height: 58px;
+		    font-size: 20px;
 		}
 
 		.form-signin input[type=email],
@@ -142,15 +144,15 @@
 
 		.btn.btn-signin {
 		    /*background-color: #4d90fe; */
-		    background-color: rgb(104, 145, 162);
+		    background-color: rgb(119, 185, 72);
 		    /* background-color: linear-gradient(rgb(104, 145, 162), rgb(12, 97, 33));*/
 		    padding: 0px;
-		    font-weight: 700;
-		    font-size: 14px;
-		    height: 36px;
+		    font-weight: bold;
+		    font-size: 25px;
+		    height: 58px;
 		    -moz-border-radius: 3px;
 		    -webkit-border-radius: 3px;
-		    border-radius: 3px;
+		    border-radius: 15px;
 		    border: none;
 		    -o-transition: all 0.218s;
 		    -moz-transition: all 0.218s;
@@ -161,7 +163,8 @@
 		.btn.btn-signin:hover,
 		.btn.btn-signin:active,
 		.btn.btn-signin:focus {
-		    background-color: rgb(12, 97, 33);
+		    background-color: rgb(73, 144, 22);
+
 		}
 
 		.forgot-password {
@@ -174,6 +177,15 @@
 		    color: rgb(12, 97, 33);
 		}
 
+		label{
+			font-size: 17px;
+		}
+
+		.checkbox input{
+			width: 16px;
+			height: 16px;
+		}
+
     </style>
 </head>
 <body>
@@ -181,7 +193,7 @@
 	<div class="container">
         <div class="card card-container">
             <!-- <img class="profile-img-card" src="//lh3.googleusercontent.com/-6V8xOA6M7BA/AAAAAAAAAAI/AAAAAAAAAAA/rzlHcD0KYwo/photo.jpg?sz=120" alt="" /> -->
-            <img id="profile-img" class="profile-img-card" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png" />
+            <img id="profile-img" class="profile-img-card" src="images/AgroMap.png">
             <p id="profile-name" class="profile-name-card"></p>
             <form class="form-signin" action="" method="POST" >
                 <span id="reauth-email" class="reauth-email"></span>
@@ -189,7 +201,7 @@
                 <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Password" required>
                 <div id="remember" class="checkbox">
                     <label>
-                        <input type="checkbox" value="remember-me"> Remember me
+                        <input type="checkbox" value="remember-me" >  Remember me
                     </label>
                 </div>
                 <button class="btn btn-lg btn-primary btn-block btn-signin" name="submit" type="submit">Sign in</button>
