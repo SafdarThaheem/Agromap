@@ -201,12 +201,12 @@
                 <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Password" required>
                 <div id="remember" class="checkbox">
                     <label>
-                        <input type="checkbox" value="remember-me" >  Remember me
+                        <input type="checkbox" value="remember-me" > Remember me
                     </label>
                 </div>
                 <button class="btn btn-lg btn-primary btn-block btn-signin" name="submit" type="submit">Sign in</button>
             </form><!-- /form -->
-            <a href="#" class="forgot-password" style="">
+            <a href="#" class="forgot-password">
                 Forgot the password?
             </a>
         </div><!-- /card-container -->
