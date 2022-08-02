@@ -1,31 +1,31 @@
 <?php include 'php/config.php';
 
-    session_start();
+    // session_start();
     
-    if(isset($_POST['submit'])){
+    // if(isset($_POST['submit'])){
 
 			
 
-			$pdo = new PDO($dsn, $user, $password, $opt);
+	// 		$pdo = new PDO($dsn, $user, $password, $opt);
 
-			$password = md5($_POST['password']);
-			$query = "SELECT username, password FROM " . '"Proyecto_Arroz"' . "." . '"user_info"' . 
-						"WHERE username = '{$_POST['username']}' and password = '{$password}';";
+	// 		$password = md5($_POST['password']);
+	// 		$query = "SELECT username, password FROM " . '"Proyecto_Arroz"' . "." . '"user_info"' . 
+	// 					"WHERE username = '{$_POST['username']}' and password = '{$password}';";
 
-			$result = $pdo->query($query);
+	// 		$result = $pdo->query($query);
 
-			if ($result->rowCount() > 0){
+	// 		if ($result->rowCount() > 0){
 
-				foreach ($result as $row) {
-					$_SESSION['username'] = $row['username'];
+	// 			foreach ($result as $row) {
+	// 				$_SESSION['username'] = $row['username'];
 
-					header("Location: index.php");
-				}
+	// 				header("Location: index.php");
+	// 			}
 				 
-			}else{
-				echo '<div class="alert alert-danger">username or password incorrect</div>';
-			}
-    	}
+	// 		}else{
+	// 			echo '<div class="alert alert-danger">username or password incorrect</div>';
+	// 		}
+    // 	}
     ?>
 
 <!DOCTYPE html>

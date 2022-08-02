@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45">
+  <g id="Search" transform="translate(-1254 -114)">
+    <g id="Elipse_2" data-name="Elipse 2" transform="translate(1254 114)" fill="none" stroke="#000" stroke-width="4">
+      <circle cx="22.5" cy="22.5" r="22.5" stroke="none"/>
+      <circle cx="22.5" cy="22.5" r="20.5" fill="none"/>
+    </g>
+    <path id="Icon_awesome-search" data-name="Icon awesome-search" d="M26.911,23.592,21.6,18.279a1.278,1.278,0,0,0-.906-.373h-.869a11.079,11.079,0,1,0-1.918,1.919v.869a1.278,1.278,0,0,0,.373.906l5.313,5.313a1.274,1.274,0,0,0,1.807,0L26.906,25.4A1.285,1.285,0,0,0,26.911,23.592ZM11.084,17.906a6.821,6.821,0,1,1,6.821-6.821A6.817,6.817,0,0,1,11.084,17.906Z" transform="translate(1262.562 122.562)"/>
+  </g>
+</svg>

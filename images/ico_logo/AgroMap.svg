@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="294" height="90" viewBox="0 0 294 90">
+  <defs>
+    <filter id="AgroMap" x="0" y="0" width="294" height="90" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feFlood flood-opacity="0.561"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#AgroMap)">
+    <text id="AgroMap-2" data-name="AgroMap" transform="translate(147 66)" fill="#ee7913" font-size="65" font-family="Swiss721BT-Bold, Swis721 BT" font-weight="700"><tspan x="-140.87" y="0">Agro</tspan><tspan y="0" fill="#77b948">Map</tspan></text>
+  </g>
+</svg>

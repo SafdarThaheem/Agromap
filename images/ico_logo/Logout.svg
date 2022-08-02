@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45">
+  <g id="Logout" transform="translate(-1393 -25)">
+    <g id="Grupo_4671" data-name="Grupo 4671" transform="translate(1371.9 -985.606)">
+      <path id="Icon_open-account-logout" data-name="Icon open-account-logout" d="M8.663,0V2.888h11.55V17.325H8.663v2.888H23.1V0ZM5.775,5.775,0,10.106l5.775,4.331V11.55h11.55V8.663H5.775Z" transform="translate(31 1023)"/>
+    </g>
+    <g id="Elipse_21" data-name="Elipse 21" transform="translate(1393 25)" fill="none" stroke="#000" stroke-width="4">
+      <circle cx="22.5" cy="22.5" r="22.5" stroke="none"/>
+      <circle cx="22.5" cy="22.5" r="20.5" fill="none"/>
+    </g>
+  </g>
+</svg>
