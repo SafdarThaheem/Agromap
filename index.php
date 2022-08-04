@@ -49,20 +49,19 @@
 
 <body>
     <!-- statr Nav  -->
-    <nav class="navbar navbar-expand-lg py-0 main-nav">
-        <div class="container-fluid inner-div">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-0 main-nav">
+        <div class="container-fluid inner-nav-container">
             <a href="#">
-                <img src="images/ico_logo/Menu_Icon feather.svg" class="sidebar-menu-icon" alt="">
+                <img src="images/ico_logo/Menu_Icon feather.svg" class="sidebar-menu-bars" alt="">
             </a>
-            <a class="navbar-brand m-auto py-0" href="#">
+            <a class="navbar-brand py-0" href="#">
                 <img src="images/AgroMap-top-logo.png" alt="" style="width: 260px;">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-                <img src="images/ico_logo/Menu_Icon feather.svg" class="sidebar-menu-icon" alt="">
-                <!-- <span class="navbar-toggler-icon"></span> -->
+                <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse flex-grow-0 tog-div" id="navbarTogglerDemo03">
-                <ul class="navbar-nav mx-auto sm-icon">
+            <div class="collapse navbar-collapse flex-grow-0 sm-icon" id="navbarTogglerDemo03">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link active" href="#"><img src="images/ico_logo/Search.svg" alt=""></a>
                     </li>
@@ -89,81 +88,83 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
             <div id="filterPanel" class="form-outer-div">
                 <form style="color: white;">
-                    <div class="row">
-                        <div class=" col-md form-group" >
-                            <label for="Tipo" id="Tipo_label">Tipo</label>
-                            <select name="Tipo" class="form-control form-select rounded-pill" id="Tipo_select">
-                                <option value="">Tipo</option>
-                            </select>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class=" col-md form-group">
+                                <label for="Tipo" id="Tipo_label">Tipo</label>
+                                <select name="Tipo" class="form-control form-select rounded-pill" id="Tipo_select">
+                                    <option value="">Tipo</option>
+                                </select>
 
-                            <label for="Provincia" id="Provincia_label">Provincia</label>
-                            <select name="Provincia" class="form-control form-select rounded-pill" id="Provincia_select">
-                                <option>Provincia</option>
-                            </select>
-                        </div>
+                                <label for="Provincia" id="Provincia_label">Provincia</label>
+                                <select name="Provincia" class="form-control form-select rounded-pill" id="Provincia_select">
+                                    <option>Provincia</option>
+                                </select>
+                            </div>
 
-                        <div class=" col-md form-group">
-                            <label for="District" id="District">Distrito</label>
-                            <select name="District" class="form-control form-select rounded-pill" id="District_select">
-                                <option value="">Distrito</option>
-                            </select>
+                            <div class=" col-md form-group">
+                                <label for="District" id="District">Distrito</label>
+                                <select name="District" class="form-control form-select rounded-pill" id="District_select">
+                                    <option value="">Distrito</option>
+                                </select>
 
-                            <label for="Corregimiento" id="Corregimiento">Corregimiento</label>
-                            <select name="Correg" class="form-control form-select rounded-pill" id="Crg_select">
-                                <option value="">Corregimiento</option>
-                            </select>
-                        </div>
+                                <label for="Corregimiento" id="Corregimiento">Corregimiento</label>
+                                <select name="Correg" class="form-control form-select rounded-pill" id="Crg_select">
+                                    <option value="">Corregimiento</option>
+                                </select>
+                            </div>
 
-                        <div class=" col-md form-group">
-                            <label>Fecha de siembra</label>
-                            <input name="Plant_date_from" type="date" class="form-control rounded-pill" id="Plant_date_from" placeholder="">
-                            <label>To</label>
-                            <input name="Plant_date_to" type="date" class="form-control rounded-pill" id="Plant_date_to" placeholder="">
-                        </div>
+                            <div class=" col-md form-group">
+                                <label>Fecha de siembra</label>
+                                <input name="Plant_date_from" type="date" class="form-control rounded-pill" id="Plant_date_from" placeholder="">
+                                <label>To</label>
+                                <input name="Plant_date_to" type="date" class="form-control rounded-pill" id="Plant_date_to" placeholder="">
+                            </div>
 
-                        <div class=" col-md form-group">
-                            <label>Fecha de cosecha</label>
-                            <input name="Harvest_date_from" type="date" class="form-control rounded-pill" id="Harvest_date_from">
-                            <label>To</label>
-                            <input name="Harvest_date_to" type="date" class="form-control rounded-pill" id="Harvest_date_to">
-                        </div>
+                            <div class=" col-md form-group">
+                                <label>Fecha de cosecha</label>
+                                <input name="Harvest_date_from" type="date" class="form-control rounded-pill" id="Harvest_date_from">
+                                <label>To</label>
+                                <input name="Harvest_date_to" type="date" class="form-control rounded-pill" id="Harvest_date_to">
+                            </div>
 
-                        <div class=" col-md form-group">
-                            <label>Fecha de actualización</label>
-                            <input name="Update_date_from" type="date" class="form-control rounded-pill" id="Update_date_from">
-                            <label>To</label>
-                            <input name="Update_date_to" type="date" class="form-control rounded-pill" id="Update_date_to">
-                        </div>
+                            <div class=" col-md form-group">
+                                <label>Fecha de actualización</label>
+                                <input name="Update_date_from" type="date" class="form-control rounded-pill" id="Update_date_from">
+                                <label>To</label>
+                                <input name="Update_date_to" type="date" class="form-control rounded-pill" id="Update_date_to">
+                            </div>
 
-                        <div class=" col-md form-group">
-                            <label>Área sembrada</label>
-                            <input name="Plant_area_from" type="number" class="form-control rounded-pill" min="0" placeholder="min" id="Plant_area_from">
-                            <label>To</label>
-                            <input name="Plant_area_to" type="number" class="form-control rounded-pill" min="0" placeholder="max" id="Plant_area_to">
-                        </div>
+                            <div class=" col-md form-group">
+                                <label>ÁreaSembrada</label>
+                                <input name="Plant_area_from" type="number" class="form-control rounded-pill" min="0" placeholder="min" id="Plant_area_from">
+                                <label>To</label>
+                                <input name="Plant_area_to" type="number" class="form-control rounded-pill" min="0" placeholder="max" id="Plant_area_to">
+                            </div>
 
-                        <div class=" col-md form-group">
-                            <label>Área cosechada</label>
-                            <input name="Harvest_area_from" type="number" class="form-control rounded-pill" min="0" placeholder="min" id="Harvest_area_from">
-                            <label>To</label>
-                            <input name="Harvest_area_to" type="number" class="form-control rounded-pill" min="0" placeholder="max" id="Harvest_area_to">
-                        </div>
+                            <div class=" col-md form-group">
+                                <label>ÁreaCosechada</label>
+                                <input name="Harvest_area_from" type="number" class="form-control rounded-pill" min="0" placeholder="min" id="Harvest_area_from">
+                                <label>To</label>
+                                <input name="Harvest_area_to" type="number" class="form-control rounded-pill" min="0" placeholder="max" id="Harvest_area_to">
+                            </div>
 
-                        <div class=" col-md form-group">
-                            <label>Responsable</label>
-                            <select name="Responsabl" class="form-control form-select rounded-pill" id="Responsible_select">
-                                <option value="">Responsable</option>
-                            </select>
+                            <div class=" col-md form-group">
+                                <label>Responsable</label>
+                                <select name="Responsabl" class="form-control form-select rounded-pill" id="Responsible_select">
+                                    <option value="">Responsable</option>
+                                </select>
 
-                            <label>Variedad</label>
-                            <select name="Variedad" class="form-control form-select rounded-pill" id="Variety_select">
-                                <option value="">Variedad</option>
-                            </select>
-                        </div>
+                                <label>Variedad</label>
+                                <select name="Variedad" class="form-control form-select rounded-pill" id="Variety_select">
+                                    <option value="">Variedad</option>
+                                </select>
+                            </div>
 
-                        <div class="col-md form-group">
-                            <input name="submit" type="submit" style="border-radius: 10px;" class="btn btn-primary" value="Aplicar">
-                            <input name="clear" id="clearFilter" type="submit" style="border-radius: 10px;" class="btn btn-primary" value="Limpiar">
+                            <div class="col-md form-group">
+                                <input name="submit" type="submit" style="border-radius: 10px; margin:10px;" class="btn btn-primary" value="Aplicar">
+                                <input name="clear" id="clearFilter" type="submit" style="border-radius: 10px; margin:10px;" class="btn btn-primary" value="Limpiar">
+                            </div>
                         </div>
                     </div>
                 </form>
@@ -172,6 +173,7 @@
     </nav>
     <!-- end nav form -->
 
+   <!-- left Sidebar -->
     <div id="mySidebar" class="sidebar">
         <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a> -->
         <a href="php/logout.php" style="margin-left: -15px;"><img src="images/logout.png" alt=""></i></a>
@@ -182,40 +184,88 @@
         <a href="#" style="margin-left: -15px;"><img src="images/Layer_On_Off.svg" alt=""></i></a>
         <a href="#" style="margin-left: -15px;"><img src="images/Base_map.svg" alt=""></i></a>
     </div>
-
-    <!-- <div id="main" class="container-fluid">
-
-        <div class="row">
-            <div style="background-color: black;opacity: 0.7;" class="col-md-12">
+    <!-- end left sidebar -->
 
 
-            </div>
-        </div>
+    <!-- Map and right sidebar -->
 
-        <div class="row">
-            <div id="map" style="width: 100%; height: 120vh; padding: 0 0 0 0 ;margin: 0 0 0 0;" class="col-md-8"></div>
-
-            <div id="chartsPanel" class="col-md-4" style="display: none; width: 0;">
-                <div class="row">
-                    <div id="chartContainer1" style="height: 40vh; width: 100%;" class="col-md-10">
+    <div class="container-fluid"> 
+        <div class="row map-area px-0">
+            <div class="col-md-9 " style="background-color: blue ;">
+                <div id="main" class="container-fluid px-0">
+                    <div class="row">
+                        <div style="background-color: black;opacity: 0.7;" class="col-md-12">
+                        </div>
                     </div>
 
-                    <div class="w-100"></div>
+                    <div class="row">
+                        <div id="map" style="width: 100%; height: 120vh; padding: 0 0 0 0 ;margin: 0 0 0 0;" class="col-md-8"></div>
 
-                    <div id="chartContainer2" style="height: 40vh; width: 100%;" class="col-md-10">
-                    </div>
+                        <div id="chartsPanel" class="col-md-4" style="display: none; width: 0;">
+                            <div class="row">
+                                <div id="chartContainer1" style="height: 40vh; width: 100%;" class="col-md-10">
+                                </div>
 
-                    <div class="w-100"></div>
+                                <div class="w-100"></div>
 
-                    <div id="chartContainer3" style="height: 40vh; width: 100%; " class="col-md-10">
+                                <div id="chartContainer2" style="height: 40vh; width: 100%;" class="col-md-10">
+                                </div>
+
+                                <div class="w-100"></div>
+
+                                <div id="chartContainer3" style="height: 40vh; width: 100%; " class="col-md-10">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
-        </div>
+            <!-- right Sedebar -->
+            <div class="col-md-3  right-sidebar">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <p>Total de productores</p>
+                        <h1>2,580</h1>
+                    </div>
+                    <div class="col-sm-6">
+                        <p>Clientes</p>
+                        <h1>350</h1>
+                    </div>
+                </div>
 
-        <br><br>
-    </div> -->
+                <div class="row">
+                    <div class="col-sm-6">
+                        <p>Proximos a sembrar</p>
+                        <p>(3 messes)</p>
+                        <h1>250</h1>
+                    </div>
+                    <div class="col-sm-6">
+                        <p>Proximos a cosechar</p>
+                        <p>(3 messes)</p>
+                        <h1>120</h1>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <h3>Área sembrada por provincia</h3>
+                    <img src="images/column-chart.png" alt="">
+                </div>
+
+                <div class="row">
+                    <h3>Área sembrada por provincia</h3>
+                    <img src="images/column-chart.png" alt="">
+                </div>
+
+                <div class="row">
+                    <h3>Variedad de Semilla por provincia</h3>
+                    <img src="images/pai-chart.png" alt="">
+                </div>
+            </div>
+            <!-- end right sidebar -->
+        </div>
+    </div>
+    <!-- end Map and right sidebar -->
 
 </body>
 
