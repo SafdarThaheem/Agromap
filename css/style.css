@@ -1,6 +1,10 @@
+*{
+  box-sizing: border-box;
+}
 /* custom style */
   :root{
     --nav-height : 100%;
+    --right-sidebar-row-border : 1px solid gray;
   }
 
   .main-nav{
@@ -13,6 +17,16 @@
 
   .sidebar-menu-bars{
     width: 30px;
+  }
+
+  .left-side-menu{
+    background: none;
+  }
+
+  .right-menu-button{
+    padding: 0rem;
+    font-size: 1rem;
+    border: none;
   }
 
   .sm-icon{
@@ -41,11 +55,89 @@
     margin: 10px 0px;
     width:100%;
   }
+
+  .form-button-div{
+    display: flex;
+    justify-content: end;
+  }
+
+  .form-button-div input{
+    height: 40px;
+  }
   /* end form nav style */
 
+  /* right sidebar style*/
+  .right-sidebar-row{
+    border: var(--right-sidebar-row-border);
+  }
+
+  .right-sidebar-col{
+    padding: 0px;
+    border-left: var(--right-sidebar-row-border);
+    border-right: var(--right-sidebar-row-border);
+  }
+
+
+  .right-sidebar-row{
+    text-align: center;
+  }
+
+  .right-sidebar-row p{
+    margin: 0px;
+  }
+
+  .right-sidebar-row img{
+    width: 160px;
+    padding: 15px 0;
+    margin: auto;
+  }
+
+  .upper-table-from{
+    background-color: black;
+    border-bottom: 2px solid gray;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+  }
+
+  .button-div button{
+    padding: 0px;
+    width: 50px;
+    margin: 0px 5px;
+  }
+
+  .button-div button:hover{
+    background-color: rgb(216, 216, 216);
+  }
+
+  .textbox input{
+    width: 340px;
+    height: 29px;
+    padding: 0px 10px;
+    border-radius: 10px;
+    float: right;
+  }
+
+  /* end right sidebar style */
+
+  .map-div{
+    z-index: 0;
+  }
   @media only screen and (max-width: 995px) {
       .sm-icon {
         border-left: none;
+      }
+
+      .sidebar-menu-bars{
+        width: 25px;
+      }
+
+      .sm-icon ul{
+        height: auto;
+      }
+      .agromap-logo{
+        margin-right: 0px;
       }
 
       .main-nav{
@@ -55,6 +147,29 @@
       .sm-icon ul li a img{
         width: 30px;
       }
+
+      .upper-table-from{
+        padding: 10px 0px;
+      }
+
+      .textbox{
+        padding-top: 5px;
+        display: flex;
+        justify-content: center;
+      }
+
+      .button-div{
+        display: flex;
+        justify-content: center;
+      }
+
+      .textbox input{
+        width: 240px;
+      }
+
+      .upper-table-from{
+        height: auto;
+      }
   }
 
 /* end custom style */
@@ -62,14 +177,15 @@
 .sidebar {
   height: 100vh;
   width: 0;
-  position: absolute;
-  z-index: 10;
+  position: fixed;
+  z-index: 990;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: #585858;
   overflow-x: hidden;
   transition: 0.5s;
-  padding-top: 60px;
+  /* padding-top: 60px; */
+  margin-top: 94px;
 }
 
 .sidebar a {
