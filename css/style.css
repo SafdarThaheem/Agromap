@@ -1,6 +1,11 @@
 *{
   box-sizing: border-box;
 }
+
+.around-div{
+  width: 100%;
+  height: 100vh;
+}
 /* custom style */
   :root{
     --nav-height : 100%;
@@ -77,21 +82,6 @@
     border-right: var(--right-sidebar-row-border);
   }
 
-
-  .right-sidebar-row{
-    text-align: center;
-  }
-
-  .right-sidebar-row p{
-    margin: 0px;
-  }
-
-  .right-sidebar-row img{
-    width: 160px;
-    padding: 15px 0;
-    margin: auto;
-  }
-
   .upper-table-from{
     background-color: black;
     border-bottom: 2px solid gray;
@@ -120,10 +110,7 @@
   }
 
   /* end right sidebar style */
-
-  .map-div{
-    z-index: 0;
-  }
+  
   @media only screen and (max-width: 995px) {
       .sm-icon {
         border-left: none;
