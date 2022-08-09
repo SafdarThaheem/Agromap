@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45">
+  <g id="Share_map" data-name="Share map" transform="translate(-1665 -25)">
+    <path id="Icon_awesome-share-alt" data-name="Icon awesome-share-alt" d="M20.429,18.571a5.547,5.547,0,0,0-3.47,1.213l-5.948-3.717a5.6,5.6,0,0,0,0-2.419L16.959,9.93a5.561,5.561,0,1,0-1.969-3.149L9.041,10.5a5.571,5.571,0,1,0,0,8.718l5.948,3.717a5.572,5.572,0,1,0,5.439-4.362Z" transform="translate(1674 33)"/>
+    <g id="Elipse_11" data-name="Elipse 11" transform="translate(1665 25)" fill="none" stroke="#000" stroke-width="4">
+      <circle cx="22.5" cy="22.5" r="22.5" stroke="none"/>
+      <circle cx="22.5" cy="22.5" r="20.5" fill="none"/>
+    </g>
+  </g>
+</svg>
