@@ -200,9 +200,9 @@
                         </div>
 
                         <div class="row map-div mx-0">
-                            <div id="map" style="width: 100%; height: 120vh; padding: 0 0 0 0 ;margin: 0 0 0 0;" class="col-md"></div>
+                            <div id="map" style="width: 100%; height: calc(100vh - 94px); padding: 0 0 0 0 ;margin: 0 0 0 0;"></div>
 
-                            <div id="chartsPanel" class="col-md-4" style="display: none; width: 0;">
+                            <div id="chartsPanel" style="display: none; width: 0;">
 
                                 <div class="row right-sidebar-row">
                                     <div class="col-sm right-sidebar-col">
@@ -229,21 +229,21 @@
                                 </div>
 
                                 <div class="row">
-                                    <div id="chartContainer1" style="height: 40vh; width: 100%;" class="col-md-10">
+                                    <div id="chartContainer1" class="col-md-10">
                                         <h5><b>Área sembrada por provincia</b></h5>
                                         <img src="images/column-chart.png" alt="">
                                     </div>
 
                                     <div class="w-100"></div>
 
-                                    <div id="chartContainer2" style="height: 40vh; width: 100%;" class="col-md-10">
+                                    <div id="chartContainer2" class="col-md-10">
                                         <h5><b>Área sembrada por provincia</b></h5>
                                         <img src="images/column-chart.png" alt="">
                                     </div>
 
                                     <div class="w-100"></div>
 
-                                    <div id="chartContainer3" style="height: 40vh; width: 100%; " class="col-md-10">
+                                    <div id="chartContainer3" class="col-md-10">
                                         <h5><b>Variedad de Semilla por provincia</b></h5>
                                         <img src="images/pai-chart.png" alt="">
                                     </div>

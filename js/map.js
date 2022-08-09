@@ -490,10 +490,12 @@ function openNav() {
     if(tog==true){
         document.getElementById("mySidebar").style.width = "0";
         document.getElementById("main").style.marginLeft= "0";
+        jQuery('body').removeClass("left-sidebar-exp");
         tog=false;
     }else{
         document.getElementById("mySidebar").style.width = "100px";
         document.getElementById("main").style.marginLeft = "100px";
+        jQuery('body').addClass("left-sidebar-exp");
         tog=true;
     } 
   }
@@ -529,13 +531,14 @@ function openCharts(){
   var charts = document.getElementById('chartsPanel');
 
   if (charts.style.display == 'none'){
-    document.getElementById("map").style.width = "65%";
-    charts.style.width = '32%';
+    jQuery("body").addClass("right-sidebar-exp");
+    document.getElementById("map").style.width = "70%";
+    charts.style.width = '30%';
     charts.style.display = 'block';
-    window.dispatchEvent(new Event('resize'));  
-    
+    window.dispatchEvent(new Event('resize'));
   }
   else if(charts.style.display == 'block'){
+    jQuery("body").removeClass("right-sidebar-exp");
     document.getElementById("map").style.width = "100%";
     charts.style.width = '0';
     charts.style.display = 'none';

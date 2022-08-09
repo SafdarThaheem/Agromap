@@ -10,6 +10,7 @@
   :root{
     --nav-height : 100%;
     --right-sidebar-row-border : 1px solid gray;
+    --nav-custom-height: 94px;
   }
 
   .main-nav{
@@ -80,6 +81,11 @@
     padding: 0px;
     border-left: var(--right-sidebar-row-border);
     border-right: var(--right-sidebar-row-border);
+    text-align: center;
+  }
+
+  .right-sidebar-col p {
+    margin-bottom: 0;
   }
 
   .upper-table-from{
@@ -111,9 +117,34 @@
 
   /* end right sidebar style */
   
-  @media only screen and (max-width: 995px) {
+  @media only screen and (max-width: 992px) {
       .sm-icon {
         border-left: none;
+      }
+      
+      #resultsTable {
+        height: auto !important;
+      }
+
+      body.right-sidebar-exp #map {
+        width: 0% !important;
+      }
+      
+      body.right-sidebar-exp #chartsPanel {
+        width: 100% !important;
+      }
+
+      #chartContainer1, #chartContainer2, #chartContainer3 {
+        height: auto !important;
+        padding: 25px 0;
+      }
+
+      .right-sidebar-col {
+        border-bottom: 1px solid black;
+      }
+
+      .sidebar {
+        height: auto;
       }
 
       .sidebar-menu-bars{
@@ -162,7 +193,7 @@
 /* end custom style */
 
 .sidebar {
-  height: 100vh;
+  height: calc(100vh - var(--nav-custom-height));
   width: 0;
   position: fixed;
   z-index: 990;
@@ -171,8 +202,59 @@
   background-color: #585858;
   overflow-x: hidden;
   transition: 0.5s;
-  /* padding-top: 60px; */
-  margin-top: 94px;
+  margin-top: var(--nav-custom-height);
+}
+
+#chartsPanel {
+  height: calc(100vh - var(--nav-custom-height));
+  overflow-y: scroll;
+}
+
+body #map {
+  width: 100%;
+}
+
+body.right-sidebar-exp #map {
+  width: 70%;
+}
+
+body.right-sidebar-exp #chartsPanel {
+  width: 30%;
+}
+
+body #resultsTable {
+  width: 100%; 
+}
+
+body.left-sidebar-exp #resultsTable {
+  width: calc(100% - 100px);
+}
+
+#resultsTable {
+  position: fixed; 
+  bottom: 0;
+  z-index: 992;
+  height: 230px;
+  overflow-y: scroll;
+  background: rgb(226, 227, 229);
+}
+
+#chartContainer1, #chartContainer2, #chartContainer3 {
+  height: 200px; 
+  width: 100%;
+  border-bottom: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#chartContainer3 {
+  height: 250px; 
+}
+
+#chartContainer1 h5, #chartContainer2 h5, #chartContainer3 h5 {
+  margin-bottom: 15px;
 }
 
 .sidebar a {
